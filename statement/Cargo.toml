@@ -1,6 +1,5 @@
-workspace = { members = [ "complex-num", "function", "number", "other-type", "statement","variables"] }
 [package]
-name = "hello_world"
+name = "statement"
 version = "0.1.0"
 edition = "2021"
 
