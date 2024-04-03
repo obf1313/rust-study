@@ -20,6 +20,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "composite"
+version = "0.1.0"
+
+[[package]]
+name = "enum-type"
+version = "0.1.0"
+
+[[package]]
 name = "function"
 version = "0.1.0"
 
@@ -117,6 +125,10 @@ version = "0.1.0"
 
 [[package]]
 name = "statement"
+version = "0.1.0"
+
+[[package]]
+name = "struct-memory"
 version = "0.1.0"
 
 [[package]]
