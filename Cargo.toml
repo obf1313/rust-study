@@ -1,7 +1,7 @@
 workspace = { members = [ "arr",
   "borrow",
   "complex-num",
-  "composite", "enum-type",
+  "composite", "enum-type", "flow-control",
   "function",
   "number",
   "other-type",
