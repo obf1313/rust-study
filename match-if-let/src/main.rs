@@ -1,19 +1,21 @@
-#[derive(Debug)]
-enum UsState {
-    Alabama,
-    Alaska,
-}
-
-enum Coin {
-    Penny,
-    Nickel,
-    Dime,
-    // 25美分硬币
-    Quarter(UsState),
-}
 fn main() {
     println!("Hello, world!");
-    test_match()
+    test_match();
+
+    let coin = Coin::Quarter(UsState::Alaska);
+    value_in_cents(coin);
+
+    test_action();
+
+    // 变量遮蔽
+    let age = Some(30);
+    println!("在匹配前，age 是{:?}", age);
+    if let Some(age) = age {
+        println!("在匹配后，age 是{:?}", age);
+    }
+    // 可以看出在 if let 中，= 右边 Some(i32) 类型的 age 被左边 i32 类型的新 age 遮蔽了，该遮蔽一直持续到 if let 语句块的结束。
+    // 因此第三个 println! 输出的 age 依然是 Some(i32) 类型。
+    println!("在匹配后，age 是{:?}", age);
 }
 
 enum Direction {
@@ -34,6 +36,7 @@ fn test_match() {
             println!("North or South")
         }
         // _ 类似 switch 的 default
+        // 通配符
         _ => println!("West"),
     };
 
@@ -52,7 +55,20 @@ fn test_match() {
     // 模式绑定
 }
 
-// TODO: https://course.rs/basic/match-pattern/match-if-let.html
+#[derive(Debug)]
+enum UsState {
+    Alabama,
+    Alaska,
+}
+
+enum Coin {
+    Penny,
+    Nickel,
+    Dime,
+    // 25美分硬币
+    Quarter(UsState),
+}
+
 fn value_in_cents(coin: Coin) -> u8 {
     match coin {
         Coin::Penny => 1,
@@ -63,4 +79,51 @@ fn value_in_cents(coin: Coin) -> u8 {
             25
         }
     }
+}
+
+enum Action {
+    Say(String),
+    MoveTo(i32, i32),
+    ChangeColorRGB(u16, u16, u16),
+}
+
+fn test_action() {
+    let actions = [
+        Action::Say("Hello Rust".to_string()),
+        Action::MoveTo(1, 2),
+        Action::ChangeColorRGB(255, 255, 0),
+    ];
+    for action in actions {
+        match action {
+            Action::Say(s) => println!("{}", s),
+            Action::MoveTo(x, y) => println!("Move to {}, {}", x, y),
+            Action::ChangeColorRGB(r, g, _) => {
+                println!(
+                    "change color into '(r:{}, g:{}, b:0)', 'b' has been ignored",
+                    r, g,
+                );
+            }
+        }
+    }
+}
+
+// 只关心某一个值是否存在
+// if let
+// 那不就是个普通 if 吗
+fn test_if_let() {
+    let some_u8_value = Some(3u8);
+    if let Some(3) = some_u8_value {
+        println!("three");
+    }
+}
+
+// matches!宏
+enum MyEnum {
+    Foo,
+    Bar,
+}
+
+fn test_my_enum() {
+    let v = vec![MyEnum::Foo, MyEnum::Bar, MyEnum::Foo];
+    v.iter().filter(|x| matches!(x, MyEnum::Foo));
 }
