@@ -3,6 +3,10 @@
 version = 3
 
 [[package]]
+name = "all-patterns"
+version = "0.1.0"
+
+[[package]]
 name = "arr"
 version = "0.1.0"
 
