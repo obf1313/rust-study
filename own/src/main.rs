@@ -26,7 +26,7 @@ fn main() {
     let s2 = s1;
 
     // 由于 Rust 禁止你使用无效的引用
-    println!("{}, world!", s1);
+    // println!("{}, world!", s1);
 
     // x 只是引用了存储在二进制中的字符串 "hello, world"，并没有持有所有权
     let x: &str = "hello, world";

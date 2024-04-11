@@ -44,6 +44,10 @@ name = "function"
 version = "0.1.0"
 
 [[package]]
+name = "generic"
+version = "0.1.0"
+
+[[package]]
 name = "hello_world"
 version = "0.1.0"
 
