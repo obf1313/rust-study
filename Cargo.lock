@@ -164,5 +164,9 @@ name = "struct-memory"
 version = "0.1.0"
 
 [[package]]
+name = "trait-study"
+version = "0.1.0"
+
+[[package]]
 name = "variables"
 version = "0.1.0"
