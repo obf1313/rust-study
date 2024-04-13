@@ -34,7 +34,8 @@ fn xiamawei() {
         // if cfg!(debug_assertions)，说明紧跟其后的输出（打印）只在 debug 模式下生效。
         if cfg!(debug_assertions) {
             // 输出到标准错误输出
-            // TODO: {:?} 啥意思，是跟 eprintln 绑定的吗，应该不是
+            // {:?} 啥意思，是跟 eprintln 绑定的吗，应该不是
+            // 是执行输出引用（不一定）对象
             eprintln!("debug: {:?} -> {:?}", record, fields);
         }
         let name = fields[0];
@@ -44,7 +45,8 @@ fn xiamawei() {
         //     if let 的作用就是仅匹配 Ok 也就是成功的情况，如果是错误，就直接忽略
         //  2) 同时 if let 还会做一次解构匹配，通过 Ok(length) 去匹配右边的 Ok(f32)，最终把相应的 f32 值赋给 length
         //  3) 当然你也可以忽略成功的情况，用 if let Err(e) = fields[1].parse::<f32>() {...}匹配出错误，然后打印出来，但是没用
-        // TODO: Ok 是关键字吗?
+        // Ok 是关键字吗?
+        // 是枚举 Result::Ok
         if let Ok(length) = fields[1].parse::<f32>() {
             println!("{}, {}cm", name, length)
         }
