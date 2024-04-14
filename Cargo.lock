@@ -178,3 +178,7 @@ version = "0.1.0"
 [[package]]
 name = "variables"
 version = "0.1.0"
+
+[[package]]
+name = "vector-study"
+version = "0.1.0"

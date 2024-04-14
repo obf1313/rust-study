@@ -8,7 +8,7 @@ workspace = { members = [ "advance-trait", "all-patterns", "arr",
   "own", "pattern-match",
   "statement",
   "struct-memory", "trait-object", "trait-study",
-  "variables",
+  "variables", "vector-study",
 ] }
 [package]
 name = "hello_world"
