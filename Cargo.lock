@@ -80,6 +80,10 @@ name = "method"
 version = "0.1.0"
 
 [[package]]
+name = "minigrep"
+version = "0.1.0"
+
+[[package]]
 name = "my-lib"
 version = "0.1.0"
 
