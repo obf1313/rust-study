@@ -1,4 +1,4 @@
-workspace = { members = [ "advance-trait", "all-patterns", "arr",
+workspace = { members = [ "advance-trait", "all-patterns", "arr", "art",
   "borrow",
   "complex-num",
   "composite", "enum-type", "flow-control",
