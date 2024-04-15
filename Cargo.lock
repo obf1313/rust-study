@@ -48,6 +48,10 @@ name = "flow-control"
 version = "0.1.0"
 
 [[package]]
+name = "formatted-output"
+version = "0.1.0"
+
+[[package]]
 name = "function"
 version = "0.1.0"
 
