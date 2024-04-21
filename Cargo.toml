@@ -1,5 +1,5 @@
 workspace = { members = [ "advance-trait", "all-patterns", "arr", "art",
-  "borrow",
+  "borrow", "closure",
   "complex-num",
   "composite", "enum-type", "flow-control", "formatted-output",
   "function", "generic", "hashmap", "lifetime", "match-if-let", "method", "minigrep", "my-lib", "my-project",

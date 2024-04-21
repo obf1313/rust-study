@@ -29,6 +29,10 @@ name = "borrow"
 version = "0.1.0"
 
 [[package]]
+name = "closure"
+version = "0.1.0"
+
+[[package]]
 name = "complex-num"
 version = "0.1.0"
 dependencies = [
