@@ -72,6 +72,10 @@ name = "hello_world"
 version = "0.1.0"
 
 [[package]]
+name = "iterator"
+version = "0.1.0"
+
+[[package]]
 name = "lifetime"
 version = "0.1.0"
 
