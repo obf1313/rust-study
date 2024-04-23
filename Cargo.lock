@@ -48,6 +48,10 @@ name = "composite"
 version = "0.1.0"
 
 [[package]]
+name = "deref"
+version = "0.1.0"
+
+[[package]]
 name = "enum-type"
 version = "0.1.0"
 
