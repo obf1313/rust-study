@@ -29,6 +29,10 @@ name = "borrow"
 version = "0.1.0"
 
 [[package]]
+name = "box-study"
+version = "0.1.0"
+
+[[package]]
 name = "closure"
 version = "0.1.0"
 
