@@ -7,7 +7,7 @@ workspace = { members = [ "advance-trait", "all-patterns", "arr", "art",
   "other-type",
   "own", "panic", "pattern-match", "rc-arc", "restaurant", "result",
   "statement",
-  "struct-memory", "trait-object", "trait-study", "use-study",
+  "struct-memory", "thread", "trait-object", "trait-study", "use-study",
   "variables", "vector-study",
 ] }
 [package]

@@ -240,6 +240,10 @@ name = "struct-memory"
 version = "0.1.0"
 
 [[package]]
+name = "thread"
+version = "0.1.0"
+
+[[package]]
 name = "trait-object"
 version = "0.1.0"
 
