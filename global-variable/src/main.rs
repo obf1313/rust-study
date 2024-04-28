@@ -1,6 +1,9 @@
 use lazy_static::lazy_static;
+use std::collections::HashMap;
 use std::sync::atomic::{AtomicUsize, Ordering};
 use std::sync::Mutex;
+#![feature(once_cell)]
+use std::{lazy::SyncOnceCell, thread};
 
 // 全局变量的生命周期肯定是'static，但是不代表它需要用static来声明
 // 编译期初始化
@@ -154,8 +157,6 @@ fn test_box_leak1() {
 // 实现一个多线程的日志组件 Logger：
 // 低于Rust 1.70版本中， OnceCell 和 SyncOnceCell 的API为实验性的 ，
 // 需启用特性 `#![feature(once_cell)]`。
-#![feature(once_cell)]
-use std::{lazy::SyncOnceCell, thread};
 
 // Rust 1.70版本以上,
 // use std::{sync::OnceLock, thread};

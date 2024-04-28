@@ -110,6 +110,10 @@ name = "enum-type"
 version = "0.1.0"
 
 [[package]]
+name = "errors"
+version = "0.1.0"
+
+[[package]]
 name = "flow-control"
 version = "0.1.0"
 
@@ -130,6 +134,13 @@ name = "gimli"
 version = "0.28.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4271d37baee1b8c7e4b708028c57d816cf9d2434acb33a549475f78c181f6253"
+
+[[package]]
+name = "global-variable"
+version = "0.1.0"
+dependencies = [
+ "lazy_static",
+]
 
 [[package]]
 name = "hashmap"
