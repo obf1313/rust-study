@@ -389,6 +389,10 @@ name = "trait-study"
 version = "0.1.0"
 
 [[package]]
+name = "unsafe-superpower"
+version = "0.1.0"
+
+[[package]]
 name = "use-study"
 version = "0.1.0"
 

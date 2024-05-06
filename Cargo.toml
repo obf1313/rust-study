@@ -44,7 +44,7 @@ workspace = { members = [
   "sync2",
   "thread",
   "trait-object",
-  "trait-study",
+  "trait-study", "unsafe-superpower",
   "use-study",
   "variables",
   "vector-study",
