@@ -19,7 +19,7 @@ workspace = { members = [
   "function",
   "generic",
   "global-variable",
-  "hashmap",
+  "hashmap", "inline-asm",
   "iterator",
   "lifetime",
   "match-if-let",
